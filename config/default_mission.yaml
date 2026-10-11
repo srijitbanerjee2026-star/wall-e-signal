@@ -1,0 +1,41 @@
+mission:
+  name: "WALL-E and EVE's Signal"
+  seed: 17
+  max_actions: 140
+  grid:
+    width: 9
+    height: 9
+    obstacles:
+      - [3, 3]
+      - [3, 4]
+      - [3, 5]
+      - [5, 2]
+      - [5, 3]
+  robot:
+    start: [1, 1]
+    battery_capacity: 100
+    initial_battery: 100
+  hidden_target:
+    position: [7, 7]
+  hidden_clues:
+    - id: "signal-fragment-alpha"
+      position: [2, 5]
+      confidence: 0.94
+    - id: "signal-fragment-beta"
+      position: [6, 6]
+      confidence: 0.98
+  recharge_stations:
+    - [1, 1]
+    - [7, 1]
+  costs:
+    move: 2
+    scan: 3
+    recharge: 1
+    recharge_amount: 50
+    action_time: 1
+  sensors:
+    signal_noise_sigma: 0.13
+    scan_noise_sigma: 0.055
+    clue_discovery_radius: 1.5
+    target_detection_radius: 0.75
+    detection_radius: 1.0

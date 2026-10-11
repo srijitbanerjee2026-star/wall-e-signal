@@ -1,0 +1,2043 @@
+{
+  "mission": "WALL-E and EVE's Signal",
+  "events": [
+    {
+      "sequence": 0,
+      "event": "initial_observation",
+      "observation": {
+        "action": "initialize",
+        "reason": "initial",
+        "position": [
+          1,
+          1
+        ],
+        "signal_vector": {
+          "x": -0.15889590058168682,
+          "y": 0.042095799542062856
+        },
+        "signal_strength": 0.15753386462054345,
+        "signal_quality": "ambient",
+        "discovered_clues": [],
+        "battery_remaining": 100,
+        "timestamp": 0,
+        "action_count": 0,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          0,
+          8
+        ],
+        "confidence": 0.041724509570766,
+        "entropy": 3.95491825340278,
+        "evidence_count": 1,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              0,
+              8
+            ],
+            "probability": 0.041724509570766
+          },
+          {
+            "position": [
+              1,
+              1
+            ],
+            "probability": 0.0410586472836668
+          },
+          {
+            "position": [
+              0,
+              7
+            ],
+            "probability": 0.04005959807028712
+          },
+          {
+            "position": [
+              0,
+              6
+            ],
+            "probability": 0.03742900604218494
+          },
+          {
+            "position": [
+              1,
+              8
+            ],
+            "probability": 0.03530705575596872
+          }
+        ]
+      },
+      "reasoning": "Initialize the belief from WALL-E's first noisy signal reading."
+    },
+    {
+      "sequence": 1,
+      "event": "action",
+      "action": {
+        "type": "scan",
+        "reason": "Collect a higher-quality local signal measurement."
+      },
+      "observation": {
+        "action": "scan",
+        "reason": "Collect a higher-quality local signal measurement.",
+        "position": [
+          1,
+          1
+        ],
+        "signal_vector": {
+          "x": 0.06337317382188948,
+          "y": 0.08322121990141301
+        },
+        "signal_strength": 0.06272254070059172,
+        "signal_quality": "scan",
+        "discovered_clues": [],
+        "battery_remaining": 97,
+        "timestamp": 1,
+        "action_count": 1,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          5,
+          8
+        ],
+        "confidence": 0.04549066904275102,
+        "entropy": 3.6485274029647665,
+        "evidence_count": 2,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              5,
+              8
+            ],
+            "probability": 0.04549066904275102
+          },
+          {
+            "position": [
+              6,
+              8
+            ],
+            "probability": 0.04522831359492677
+          },
+          {
+            "position": [
+              4,
+              8
+            ],
+            "probability": 0.0441311282630707
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 0.043912492346922294
+          },
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 0.04205306506398339
+          }
+        ]
+      },
+      "reasoning": "This location has not been scanned; spend a scan action while retaining the return reserve."
+    },
+    {
+      "sequence": 2,
+      "event": "action",
+      "action": {
+        "type": "move",
+        "to": [
+          1,
+          2
+        ],
+        "reason": "Explore a promising signal region"
+      },
+      "observation": {
+        "action": "move",
+        "reason": "Explore a promising signal region",
+        "position": [
+          1,
+          2
+        ],
+        "signal_vector": {
+          "x": 0.05400356003880887,
+          "y": 0.019341562395853162
+        },
+        "signal_strength": 0.1765931118557417,
+        "signal_quality": "ambient",
+        "discovered_clues": [],
+        "battery_remaining": 95,
+        "timestamp": 2,
+        "action_count": 2,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          7,
+          8
+        ],
+        "confidence": 0.05397162611550701,
+        "entropy": 3.542994659703848,
+        "evidence_count": 3,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 0.05397162611550701
+          },
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 0.05338350966608159
+          },
+          {
+            "position": [
+              6,
+              8
+            ],
+            "probability": 0.05320311379633786
+          },
+          {
+            "position": [
+              5,
+              8
+            ],
+            "probability": 0.050506404790403185
+          },
+          {
+            "position": [
+              4,
+              8
+            ],
+            "probability": 0.045557924484723684
+          }
+        ]
+      },
+      "reasoning": "Move toward posterior-favored cell [1, 2] using the shortest safe path; current peak belief is 0.045."
+    },
+    {
+      "sequence": 3,
+      "event": "action",
+      "action": {
+        "type": "scan",
+        "reason": "Collect a higher-quality local signal measurement."
+      },
+      "observation": {
+        "action": "scan",
+        "reason": "Collect a higher-quality local signal measurement.",
+        "position": [
+          1,
+          2
+        ],
+        "signal_vector": {
+          "x": 0.09631858187903261,
+          "y": 0.07171353962992402
+        },
+        "signal_strength": 0.09253493609147387,
+        "signal_quality": "scan",
+        "discovered_clues": [],
+        "battery_remaining": 92,
+        "timestamp": 3,
+        "action_count": 3,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          7,
+          8
+        ],
+        "confidence": 0.07338596611928663,
+        "entropy": 3.227815189611903,
+        "evidence_count": 4,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 0.07338596611928663
+          },
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 0.0717800259869321
+          },
+          {
+            "position": [
+              6,
+              8
+            ],
+            "probability": 0.0686450567243807
+          },
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.0653956563004312
+          },
+          {
+            "position": [
+              8,
+              7
+            ],
+            "probability": 0.06415017334456186
+          }
+        ]
+      },
+      "reasoning": "This location has not been scanned; spend a scan action while retaining the return reserve."
+    },
+    {
+      "sequence": 4,
+      "event": "action",
+      "action": {
+        "type": "move",
+        "to": [
+          2,
+          2
+        ],
+        "reason": "Explore a promising signal region"
+      },
+      "observation": {
+        "action": "move",
+        "reason": "Explore a promising signal region",
+        "position": [
+          2,
+          2
+        ],
+        "signal_vector": {
+          "x": -0.02599817226884185,
+          "y": 0.0864660061320721
+        },
+        "signal_strength": 0.21302607533848908,
+        "signal_quality": "ambient",
+        "discovered_clues": [],
+        "battery_remaining": 90,
+        "timestamp": 4,
+        "action_count": 4,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          7,
+          8
+        ],
+        "confidence": 0.08312434909117254,
+        "entropy": 3.138612242741413,
+        "evidence_count": 5,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 0.08312434909117254
+          },
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 0.0800714657289989
+          },
+          {
+            "position": [
+              6,
+              8
+            ],
+            "probability": 0.07952595354553543
+          },
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.06743548354881446
+          },
+          {
+            "position": [
+              5,
+              8
+            ],
+            "probability": 0.06703367102940344
+          }
+        ]
+      },
+      "reasoning": "Move toward posterior-favored cell [7, 8] using the shortest safe path; current peak belief is 0.073."
+    },
+    {
+      "sequence": 5,
+      "event": "action",
+      "action": {
+        "type": "scan",
+        "reason": "Collect a higher-quality local signal measurement."
+      },
+      "observation": {
+        "action": "scan",
+        "reason": "Collect a higher-quality local signal measurement.",
+        "position": [
+          2,
+          2
+        ],
+        "signal_vector": {
+          "x": -0.021392276934447396,
+          "y": -0.07357582686049853
+        },
+        "signal_strength": 0.18123150380726655,
+        "signal_quality": "scan",
+        "discovered_clues": [],
+        "battery_remaining": 87,
+        "timestamp": 5,
+        "action_count": 5,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          8,
+          8
+        ],
+        "confidence": 0.25509232924332326,
+        "entropy": 2.409119923629314,
+        "evidence_count": 6,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 0.25509232924332326
+          },
+          {
+            "position": [
+              8,
+              7
+            ],
+            "probability": 0.15019013178564664
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 0.14729217272389664
+          },
+          {
+            "position": [
+              8,
+              6
+            ],
+            "probability": 0.07917574300185327
+          },
+          {
+            "position": [
+              6,
+              8
+            ],
+            "probability": 0.07506581622773723
+          }
+        ]
+      },
+      "reasoning": "This location has not been scanned; spend a scan action while retaining the return reserve."
+    },
+    {
+      "sequence": 6,
+      "event": "action",
+      "action": {
+        "type": "move",
+        "to": [
+          3,
+          2
+        ],
+        "reason": "Explore a promising signal region"
+      },
+      "observation": {
+        "action": "move",
+        "reason": "Explore a promising signal region",
+        "position": [
+          3,
+          2
+        ],
+        "signal_vector": {
+          "x": 0.3043559753067121,
+          "y": 0.19609716822760162
+        },
+        "signal_strength": 0.1614209318550697,
+        "signal_quality": "ambient",
+        "discovered_clues": [],
+        "battery_remaining": 85,
+        "timestamp": 6,
+        "action_count": 6,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          8,
+          8
+        ],
+        "confidence": 0.21698142855902863,
+        "entropy": 2.4738446064047857,
+        "evidence_count": 7,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 0.21698142855902863
+          },
+          {
+            "position": [
+              8,
+              7
+            ],
+            "probability": 0.1561864129459411
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 0.12709976021654046
+          },
+          {
+            "position": [
+              8,
+              6
+            ],
+            "probability": 0.1004348659567529
+          },
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.07843606341024839
+          }
+        ]
+      },
+      "reasoning": "Move toward posterior-favored cell [8, 8] using the shortest safe path; current peak belief is 0.255."
+    },
+    {
+      "sequence": 7,
+      "event": "action",
+      "action": {
+        "type": "scan",
+        "reason": "Collect a higher-quality local signal measurement."
+      },
+      "observation": {
+        "action": "scan",
+        "reason": "Collect a higher-quality local signal measurement.",
+        "position": [
+          3,
+          2
+        ],
+        "signal_vector": {
+          "x": 0.062181018477384734,
+          "y": 0.08608766495259905
+        },
+        "signal_strength": 0.101256076335198,
+        "signal_quality": "scan",
+        "discovered_clues": [],
+        "battery_remaining": 82,
+        "timestamp": 7,
+        "action_count": 7,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          8,
+          8
+        ],
+        "confidence": 0.26685848393700934,
+        "entropy": 2.194670027701618,
+        "evidence_count": 8,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 0.26685848393700934
+          },
+          {
+            "position": [
+              8,
+              7
+            ],
+            "probability": 0.1757491495970643
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 0.15248378842966007
+          },
+          {
+            "position": [
+              8,
+              6
+            ],
+            "probability": 0.0922443941461301
+          },
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.0851092203601757
+          }
+        ]
+      },
+      "reasoning": "This location has not been scanned; spend a scan action while retaining the return reserve."
+    },
+    {
+      "sequence": 8,
+      "event": "action",
+      "action": {
+        "type": "move",
+        "to": [
+          4,
+          2
+        ],
+        "reason": "Explore a promising signal region"
+      },
+      "observation": {
+        "action": "move",
+        "reason": "Explore a promising signal region",
+        "position": [
+          4,
+          2
+        ],
+        "signal_vector": {
+          "x": 0.1610661260661937,
+          "y": 0.10072819401404726
+        },
+        "signal_strength": 0.016107746975957682,
+        "signal_quality": "ambient",
+        "discovered_clues": [],
+        "battery_remaining": 80,
+        "timestamp": 8,
+        "action_count": 8,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          8,
+          8
+        ],
+        "confidence": 0.2615962305901192,
+        "entropy": 2.1801196775818923,
+        "evidence_count": 9,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 0.2615962305901192
+          },
+          {
+            "position": [
+              8,
+              7
+            ],
+            "probability": 0.18739488807438087
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 0.14043698703981122
+          },
+          {
+            "position": [
+              8,
+              6
+            ],
+            "probability": 0.10705708774273462
+          },
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.08537074347967988
+          }
+        ]
+      },
+      "reasoning": "Move toward posterior-favored cell [8, 8] using the shortest safe path; current peak belief is 0.267."
+    },
+    {
+      "sequence": 9,
+      "event": "action",
+      "action": {
+        "type": "scan",
+        "reason": "Collect a higher-quality local signal measurement."
+      },
+      "observation": {
+        "action": "scan",
+        "reason": "Collect a higher-quality local signal measurement.",
+        "position": [
+          4,
+          2
+        ],
+        "signal_vector": {
+          "x": 0.04704030829523506,
+          "y": 0.09509603989171142
+        },
+        "signal_strength": 0.12828403539425817,
+        "signal_quality": "scan",
+        "discovered_clues": [],
+        "battery_remaining": 77,
+        "timestamp": 9,
+        "action_count": 9,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          8,
+          8
+        ],
+        "confidence": 0.3230927819646005,
+        "entropy": 1.9399224809208093,
+        "evidence_count": 10,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 0.3230927819646005
+          },
+          {
+            "position": [
+              8,
+              7
+            ],
+            "probability": 0.1948132573436606
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 0.17062927125145064
+          },
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.08552918456741775
+          },
+          {
+            "position": [
+              8,
+              6
+            ],
+            "probability": 0.0783432213760316
+          }
+        ]
+      },
+      "reasoning": "This location has not been scanned; spend a scan action while retaining the return reserve."
+    },
+    {
+      "sequence": 10,
+      "event": "action",
+      "action": {
+        "type": "move",
+        "to": [
+          4,
+          3
+        ],
+        "reason": "Explore a promising signal region"
+      },
+      "observation": {
+        "action": "move",
+        "reason": "Explore a promising signal region",
+        "position": [
+          4,
+          3
+        ],
+        "signal_vector": {
+          "x": 0.36829235497694196,
+          "y": 0.28494655561077714
+        },
+        "signal_strength": 0.0,
+        "signal_quality": "ambient",
+        "discovered_clues": [],
+        "battery_remaining": 75,
+        "timestamp": 10,
+        "action_count": 10,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          8,
+          8
+        ],
+        "confidence": 0.2435463198693784,
+        "entropy": 2.089412042833886,
+        "evidence_count": 11,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 0.2435463198693784
+          },
+          {
+            "position": [
+              8,
+              7
+            ],
+            "probability": 0.21062453089073746
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 0.13472047049138405
+          },
+          {
+            "position": [
+              8,
+              6
+            ],
+            "probability": 0.11801980922346504
+          },
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.10931357185618142
+          }
+        ]
+      },
+      "reasoning": "Move toward posterior-favored cell [8, 8] using the shortest safe path; current peak belief is 0.323."
+    },
+    {
+      "sequence": 11,
+      "event": "action",
+      "action": {
+        "type": "scan",
+        "reason": "Collect a higher-quality local signal measurement."
+      },
+      "observation": {
+        "action": "scan",
+        "reason": "Collect a higher-quality local signal measurement.",
+        "position": [
+          4,
+          3
+        ],
+        "signal_vector": {
+          "x": 0.12984083765643242,
+          "y": 0.1966648847078174
+        },
+        "signal_strength": 0.2057407525408185,
+        "signal_quality": "scan",
+        "discovered_clues": [],
+        "battery_remaining": 72,
+        "timestamp": 11,
+        "action_count": 11,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          8,
+          7
+        ],
+        "confidence": 0.18158317228630377,
+        "entropy": 2.1686168745437753,
+        "evidence_count": 12,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              8,
+              7
+            ],
+            "probability": 0.18158317228630377
+          },
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.1776757008080031
+          },
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 0.16001177058111718
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 0.13049664939698924
+          },
+          {
+            "position": [
+              7,
+              6
+            ],
+            "probability": 0.10646900033969821
+          }
+        ]
+      },
+      "reasoning": "This location has not been scanned; spend a scan action while retaining the return reserve."
+    },
+    {
+      "sequence": 12,
+      "event": "action",
+      "action": {
+        "type": "move",
+        "to": [
+          4,
+          4
+        ],
+        "reason": "Explore a promising signal region"
+      },
+      "observation": {
+        "action": "move",
+        "reason": "Explore a promising signal region",
+        "position": [
+          4,
+          4
+        ],
+        "signal_vector": {
+          "x": 0.24816948385456483,
+          "y": -0.1344261369688395
+        },
+        "signal_strength": 0.25306913243513024,
+        "signal_quality": "ambient",
+        "discovered_clues": [],
+        "battery_remaining": 70,
+        "timestamp": 12,
+        "action_count": 12,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          8,
+          7
+        ],
+        "confidence": 0.22886841983442707,
+        "entropy": 2.0673821427583974,
+        "evidence_count": 13,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              8,
+              7
+            ],
+            "probability": 0.22886841983442707
+          },
+          {
+            "position": [
+              8,
+              6
+            ],
+            "probability": 0.17646068266115317
+          },
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 0.15039375081689602
+          },
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.13456410804300745
+          },
+          {
+            "position": [
+              7,
+              6
+            ],
+            "probability": 0.12885666126829068
+          }
+        ]
+      },
+      "reasoning": "Move toward posterior-favored cell [7, 7] using the shortest safe path; current peak belief is 0.182."
+    },
+    {
+      "sequence": 13,
+      "event": "action",
+      "action": {
+        "type": "scan",
+        "reason": "Collect a higher-quality local signal measurement."
+      },
+      "observation": {
+        "action": "scan",
+        "reason": "Collect a higher-quality local signal measurement.",
+        "position": [
+          4,
+          4
+        ],
+        "signal_vector": {
+          "x": 0.1408104465820684,
+          "y": 0.22192870251168856
+        },
+        "signal_strength": 0.205392501717477,
+        "signal_quality": "scan",
+        "discovered_clues": [],
+        "battery_remaining": 67,
+        "timestamp": 13,
+        "action_count": 13,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          7,
+          7
+        ],
+        "confidence": 0.2841426671358479,
+        "entropy": 2.031882540522317,
+        "evidence_count": 14,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.2841426671358479
+          },
+          {
+            "position": [
+              8,
+              7
+            ],
+            "probability": 0.14438176566565358
+          },
+          {
+            "position": [
+              7,
+              6
+            ],
+            "probability": 0.1342386572552121
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 0.119263258151505
+          },
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 0.10033104357190258
+          }
+        ]
+      },
+      "reasoning": "This location has not been scanned; spend a scan action while retaining the return reserve."
+    },
+    {
+      "sequence": 14,
+      "event": "action",
+      "action": {
+        "type": "move",
+        "to": [
+          5,
+          4
+        ],
+        "reason": "Explore a promising signal region"
+      },
+      "observation": {
+        "action": "move",
+        "reason": "Explore a promising signal region",
+        "position": [
+          5,
+          4
+        ],
+        "signal_vector": {
+          "x": -0.08075043374457219,
+          "y": 0.4412468625251639
+        },
+        "signal_strength": 0.13790172535866002,
+        "signal_quality": "ambient",
+        "discovered_clues": [],
+        "battery_remaining": 65,
+        "timestamp": 14,
+        "action_count": 14,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          7,
+          7
+        ],
+        "confidence": 0.2629460334888737,
+        "entropy": 1.9441851307798008,
+        "evidence_count": 15,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.2629460334888737
+          },
+          {
+            "position": [
+              6,
+              7
+            ],
+            "probability": 0.24207358833471956
+          },
+          {
+            "position": [
+              6,
+              6
+            ],
+            "probability": 0.13058185791274782
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 0.1272583718632342
+          },
+          {
+            "position": [
+              6,
+              8
+            ],
+            "probability": 0.0637845831561765
+          }
+        ]
+      },
+      "reasoning": "Move toward posterior-favored cell [7, 7] using the shortest safe path; current peak belief is 0.284."
+    },
+    {
+      "sequence": 15,
+      "event": "action",
+      "action": {
+        "type": "scan",
+        "reason": "Collect a higher-quality local signal measurement."
+      },
+      "observation": {
+        "action": "scan",
+        "reason": "Collect a higher-quality local signal measurement.",
+        "position": [
+          5,
+          4
+        ],
+        "signal_vector": {
+          "x": 0.18762454409521923,
+          "y": 0.20807110981134988
+        },
+        "signal_strength": 0.20212319424952077,
+        "signal_quality": "scan",
+        "discovered_clues": [],
+        "battery_remaining": 62,
+        "timestamp": 15,
+        "action_count": 15,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          7,
+          7
+        ],
+        "confidence": 0.4125425767508293,
+        "entropy": 1.6737276686308014,
+        "evidence_count": 16,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.4125425767508293
+          },
+          {
+            "position": [
+              7,
+              6
+            ],
+            "probability": 0.18597488261320583
+          },
+          {
+            "position": [
+              6,
+              6
+            ],
+            "probability": 0.1509916764072798
+          },
+          {
+            "position": [
+              6,
+              7
+            ],
+            "probability": 0.10822921485905981
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 0.053736350328941515
+          }
+        ]
+      },
+      "reasoning": "This location has not been scanned; spend a scan action while retaining the return reserve."
+    },
+    {
+      "sequence": 16,
+      "event": "action",
+      "action": {
+        "type": "move",
+        "to": [
+          6,
+          4
+        ],
+        "reason": "Explore a promising signal region"
+      },
+      "observation": {
+        "action": "move",
+        "reason": "Explore a promising signal region",
+        "position": [
+          6,
+          4
+        ],
+        "signal_vector": {
+          "x": -0.2300280234571394,
+          "y": 0.11379437711228872
+        },
+        "signal_strength": 0.17975075076145514,
+        "signal_quality": "ambient",
+        "discovered_clues": [],
+        "battery_remaining": 60,
+        "timestamp": 16,
+        "action_count": 16,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          7,
+          7
+        ],
+        "confidence": 0.36413869593453285,
+        "entropy": 1.6425258451831535,
+        "evidence_count": 17,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.36413869593453285
+          },
+          {
+            "position": [
+              6,
+              7
+            ],
+            "probability": 0.27064802165366286
+          },
+          {
+            "position": [
+              6,
+              6
+            ],
+            "probability": 0.1570729335256934
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 0.09653307731586379
+          },
+          {
+            "position": [
+              7,
+              6
+            ],
+            "probability": 0.031906317859595336
+          }
+        ]
+      },
+      "reasoning": "Move toward posterior-favored cell [7, 7] using the shortest safe path; current peak belief is 0.413."
+    },
+    {
+      "sequence": 17,
+      "event": "action",
+      "action": {
+        "type": "scan",
+        "reason": "Collect a higher-quality local signal measurement."
+      },
+      "observation": {
+        "action": "scan",
+        "reason": "Collect a higher-quality local signal measurement.",
+        "position": [
+          6,
+          4
+        ],
+        "signal_vector": {
+          "x": 0.0672327258983742,
+          "y": 0.21749923165599944
+        },
+        "signal_strength": 0.2882957117337683,
+        "signal_quality": "scan",
+        "discovered_clues": [],
+        "battery_remaining": 57,
+        "timestamp": 17,
+        "action_count": 17,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          7,
+          7
+        ],
+        "confidence": 0.5923118738764287,
+        "entropy": 1.2594694358180127,
+        "evidence_count": 18,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.5923118738764287
+          },
+          {
+            "position": [
+              6,
+              7
+            ],
+            "probability": 0.1805793951396771
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 0.13305449095463637
+          },
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 0.023954789250419516
+          },
+          {
+            "position": [
+              6,
+              8
+            ],
+            "probability": 0.022883364102884222
+          }
+        ]
+      },
+      "reasoning": "This location has not been scanned; spend a scan action while retaining the return reserve."
+    },
+    {
+      "sequence": 18,
+      "event": "action",
+      "action": {
+        "type": "move",
+        "to": [
+          7,
+          4
+        ],
+        "reason": "Explore a promising signal region"
+      },
+      "observation": {
+        "action": "move",
+        "reason": "Explore a promising signal region",
+        "position": [
+          7,
+          4
+        ],
+        "signal_vector": {
+          "x": 0.062280125625940104,
+          "y": 0.4155979322367352
+        },
+        "signal_strength": 0.1724352717560419,
+        "signal_quality": "ambient",
+        "discovered_clues": [],
+        "battery_remaining": 55,
+        "timestamp": 18,
+        "action_count": 18,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          7,
+          7
+        ],
+        "confidence": 0.7138692019187257,
+        "entropy": 1.0394451701114065,
+        "evidence_count": 19,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.7138692019187257
+          },
+          {
+            "position": [
+              6,
+              7
+            ],
+            "probability": 0.11009530744199306
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 0.09124297359153993
+          },
+          {
+            "position": [
+              7,
+              6
+            ],
+            "probability": 0.02913626478222642
+          },
+          {
+            "position": [
+              8,
+              7
+            ],
+            "probability": 0.021729903356046132
+          }
+        ]
+      },
+      "reasoning": "Move toward posterior-favored cell [7, 7] using the shortest safe path; current peak belief is 0.592."
+    },
+    {
+      "sequence": 19,
+      "event": "action",
+      "action": {
+        "type": "scan",
+        "reason": "Collect a higher-quality local signal measurement."
+      },
+      "observation": {
+        "action": "scan",
+        "reason": "Collect a higher-quality local signal measurement.",
+        "position": [
+          7,
+          4
+        ],
+        "signal_vector": {
+          "x": -0.023883720781561625,
+          "y": 0.3053851155958344
+        },
+        "signal_strength": 0.2792993558326662,
+        "signal_quality": "scan",
+        "discovered_clues": [],
+        "battery_remaining": 52,
+        "timestamp": 19,
+        "action_count": 19,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          7,
+          7
+        ],
+        "confidence": 0.8543694214901257,
+        "entropy": 0.6055112532127248,
+        "evidence_count": 20,
+        "discovered_clues": [],
+        "top_candidates": [
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.8543694214901257
+          },
+          {
+            "position": [
+              6,
+              7
+            ],
+            "probability": 0.05694268840804201
+          },
+          {
+            "position": [
+              7,
+              6
+            ],
+            "probability": 0.05088490090302313
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 0.02891933244700488
+          },
+          {
+            "position": [
+              8,
+              7
+            ],
+            "probability": 0.0033861047617365185
+          }
+        ]
+      },
+      "reasoning": "This location has not been scanned; spend a scan action while retaining the return reserve."
+    },
+    {
+      "sequence": 20,
+      "event": "action",
+      "action": {
+        "type": "move",
+        "to": [
+          7,
+          5
+        ],
+        "reason": "Explore a promising signal region"
+      },
+      "observation": {
+        "action": "move",
+        "reason": "Explore a promising signal region",
+        "position": [
+          7,
+          5
+        ],
+        "signal_vector": {
+          "x": 0.09861579946304266,
+          "y": 0.2762838699996891
+        },
+        "signal_strength": 0.26314697666127707,
+        "signal_quality": "ambient",
+        "discovered_clues": [
+          {
+            "id": "signal-fragment-beta",
+            "origin": [
+              6,
+              6
+            ],
+            "bearing": {
+              "x": 0.7071067811865475,
+              "y": 0.7071067811865475
+            },
+            "confidence": 0.98
+          }
+        ],
+        "battery_remaining": 50,
+        "timestamp": 20,
+        "action_count": 20,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          7,
+          7
+        ],
+        "confidence": 0.997439561267667,
+        "entropy": 0.017837119955373293,
+        "evidence_count": 21,
+        "discovered_clues": [
+          "signal-fragment-beta"
+        ],
+        "top_candidates": [
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.997439561267667
+          },
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 0.0025604116826824256
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 2.3477942773719564e-08
+          },
+          {
+            "position": [
+              8,
+              7
+            ],
+            "probability": 3.5717078994104837e-09
+          },
+          {
+            "position": [
+              6,
+              7
+            ],
+            "probability": 8.610341535734503e-38
+          }
+        ]
+      },
+      "reasoning": "Move toward posterior-favored cell [7, 7] using the shortest safe path; current peak belief is 0.854."
+    },
+    {
+      "sequence": 21,
+      "event": "action",
+      "action": {
+        "type": "scan",
+        "reason": "Collect a higher-quality local signal measurement."
+      },
+      "observation": {
+        "action": "scan",
+        "reason": "Collect a higher-quality local signal measurement.",
+        "position": [
+          7,
+          5
+        ],
+        "signal_vector": {
+          "x": 0.10477089905279555,
+          "y": 0.29466381880767034
+        },
+        "signal_strength": 0.3229642724175721,
+        "signal_quality": "scan",
+        "discovered_clues": [],
+        "battery_remaining": 47,
+        "timestamp": 21,
+        "action_count": 21,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          7,
+          7
+        ],
+        "confidence": 0.9916472554570551,
+        "entropy": 0.048287626698804015,
+        "evidence_count": 22,
+        "discovered_clues": [
+          "signal-fragment-beta"
+        ],
+        "top_candidates": [
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.9916472554570551
+          },
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 0.00835270109818439
+          },
+          {
+            "position": [
+              8,
+              7
+            ],
+            "probability": 2.195296851029223e-08
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 2.1491792077323958e-08
+          },
+          {
+            "position": [
+              6,
+              8
+            ],
+            "probability": 1.1763940007530498e-40
+          }
+        ]
+      },
+      "reasoning": "This location has not been scanned; spend a scan action while retaining the return reserve."
+    },
+    {
+      "sequence": 22,
+      "event": "action",
+      "action": {
+        "type": "move",
+        "to": [
+          7,
+          6
+        ],
+        "reason": "Explore a promising signal region"
+      },
+      "observation": {
+        "action": "move",
+        "reason": "Explore a promising signal region",
+        "position": [
+          7,
+          6
+        ],
+        "signal_vector": {
+          "x": 0.21708042746971717,
+          "y": 0.5133335190091253
+        },
+        "signal_strength": 0.45787311455691904,
+        "signal_quality": "ambient",
+        "discovered_clues": [],
+        "battery_remaining": 45,
+        "timestamp": 22,
+        "action_count": 22,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          7,
+          7
+        ],
+        "confidence": 0.99463451913117,
+        "entropy": 0.03340091973897652,
+        "evidence_count": 23,
+        "discovered_clues": [
+          "signal-fragment-beta"
+        ],
+        "top_candidates": [
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.99463451913117
+          },
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 0.005365454680593162
+          },
+          {
+            "position": [
+              8,
+              7
+            ],
+            "probability": 1.7879089550656486e-08
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 8.309147203026622e-09
+          },
+          {
+            "position": [
+              6,
+              8
+            ],
+            "probability": 2.170050996242936e-42
+          }
+        ]
+      },
+      "reasoning": "Move toward posterior-favored cell [7, 7] using the shortest safe path; current peak belief is 0.992."
+    },
+    {
+      "sequence": 23,
+      "event": "action",
+      "action": {
+        "type": "scan",
+        "reason": "Collect a higher-quality local signal measurement."
+      },
+      "observation": {
+        "action": "scan",
+        "reason": "Collect a higher-quality local signal measurement.",
+        "position": [
+          7,
+          6
+        ],
+        "signal_vector": {
+          "x": 0.050379002238681275,
+          "y": 0.4890243813662451
+        },
+        "signal_strength": 0.5385541749931995,
+        "signal_quality": "scan",
+        "discovered_clues": [],
+        "battery_remaining": 42,
+        "timestamp": 23,
+        "action_count": 23,
+        "target_detected": false
+      },
+      "belief": {
+        "estimate": [
+          7,
+          7
+        ],
+        "confidence": 0.9999986703785402,
+        "entropy": 1.9321777805091707e-05,
+        "evidence_count": 24,
+        "discovered_clues": [
+          "signal-fragment-beta"
+        ],
+        "top_candidates": [
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.9999986703785402
+          },
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 1.3294663927907692e-06
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 1.5506430612423712e-10
+          },
+          {
+            "position": [
+              8,
+              7
+            ],
+            "probability": 2.8994162329313704e-15
+          },
+          {
+            "position": [
+              6,
+              8
+            ],
+            "probability": 5.388087472657279e-48
+          }
+        ]
+      },
+      "reasoning": "This location has not been scanned; spend a scan action while retaining the return reserve."
+    },
+    {
+      "sequence": 24,
+      "event": "action",
+      "action": {
+        "type": "move",
+        "to": [
+          7,
+          7
+        ],
+        "reason": "Explore a promising signal region"
+      },
+      "observation": {
+        "action": "move",
+        "reason": "Explore a promising signal region",
+        "position": [
+          7,
+          7
+        ],
+        "signal_vector": {
+          "x": -0.014738726229384682,
+          "y": -0.11097001094789818
+        },
+        "signal_strength": 1.170353963514731,
+        "signal_quality": "ambient",
+        "discovered_clues": [],
+        "battery_remaining": 40,
+        "timestamp": 24,
+        "action_count": 24,
+        "target_detected": true
+      },
+      "belief": {
+        "estimate": [
+          7,
+          7
+        ],
+        "confidence": 0.9999999990603385,
+        "entropy": 2.0471045160833014e-08,
+        "evidence_count": 25,
+        "discovered_clues": [
+          "signal-fragment-beta"
+        ],
+        "top_candidates": [
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 0.9999999990603385
+          },
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 9.396579379285323e-10
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 3.568018479897787e-15
+          },
+          {
+            "position": [
+              8,
+              7
+            ],
+            "probability": 1.1499969983342766e-18
+          },
+          {
+            "position": [
+              6,
+              8
+            ],
+            "probability": 6.34740466057e-51
+          }
+        ]
+      },
+      "reasoning": "Move toward posterior-favored cell [7, 7] using the shortest safe path; current peak belief is 1.000."
+    },
+    {
+      "sequence": 25,
+      "event": "action",
+      "action": {
+        "type": "scan",
+        "reason": "Collect a higher-quality local signal measurement."
+      },
+      "observation": {
+        "action": "scan",
+        "reason": "Collect a higher-quality local signal measurement.",
+        "position": [
+          7,
+          7
+        ],
+        "signal_vector": {
+          "x": 0.07347990372796614,
+          "y": 0.009490795532743948
+        },
+        "signal_strength": 0.996990198533454,
+        "signal_quality": "scan",
+        "discovered_clues": [],
+        "battery_remaining": 37,
+        "timestamp": 25,
+        "action_count": 25,
+        "target_detected": true
+      },
+      "belief": {
+        "estimate": [
+          7,
+          7
+        ],
+        "confidence": 1.0,
+        "entropy": 5.74964563764255e-17,
+        "evidence_count": 26,
+        "discovered_clues": [
+          "signal-fragment-beta"
+        ],
+        "top_candidates": [
+          {
+            "position": [
+              7,
+              7
+            ],
+            "probability": 1.0
+          },
+          {
+            "position": [
+              8,
+              8
+            ],
+            "probability": 1.3985633005996701e-18
+          },
+          {
+            "position": [
+              8,
+              7
+            ],
+            "probability": 2.4509853447276105e-31
+          },
+          {
+            "position": [
+              7,
+              8
+            ],
+            "probability": 1.9393821842668182e-32
+          },
+          {
+            "position": [
+              6,
+              8
+            ],
+            "probability": 6.246210587720002e-66
+          }
+        ]
+      },
+      "reasoning": "This location has not been scanned; spend a scan action while retaining the return reserve."
+    }
+  ],
+  "result": {
+    "mission": "WALL-E and EVE's Signal",
+    "status": "target_detected",
+    "inferred_location": [
+      7,
+      7
+    ],
+    "confidence": 1.0,
+    "evidence_count": 26,
+    "discovered_clues": [
+      "signal-fragment-beta"
+    ],
+    "actions_taken": 25,
+    "elapsed_time": 25,
+    "battery_remaining": 37,
+    "next_steps": [
+      "Transmit EVE's confirmed coordinates and request mission-control acknowledgement."
+    ]
+  }
+}
